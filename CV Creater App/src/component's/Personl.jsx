@@ -1,4 +1,5 @@
 import '../style/Personal.css'
+import { useState } from 'react'
 
 function Personal({text, input}){
     return (
@@ -6,7 +7,7 @@ function Personal({text, input}){
             <h1>{text}</h1>
             <hr/>
             {input.map((field) => {
-                return <input placeholder={field} />
+                return <input name={field} placeholder={field} />
             })}
         </div>
     )
