@@ -1,5 +1,4 @@
 .infoPanel{
-    border-radius: 30px;
     height: 100%;
     border-right: 1px solid white;
     flex-direction: column;
@@ -8,6 +7,15 @@
 
 .button{
     gap: 1rem;
+}
+
+.cv{
+    height: 95%;
+    width: 90%;
+    background-color: white;
+}
+.header{
+    background-color: blue;
 }
 
 /* @media (max-width: 43.7rem){
