@@ -1,5 +1,6 @@
 import '../style/Info.css';
 import Personal from './Personl';
+import Button from './Button'
 
 function InfoPanel(props){
     let background = {
@@ -14,9 +15,12 @@ function InfoPanel(props){
 
     return (
         <div className="infoPanel flex" style={background}>
-            <Personal text="Personal" />
-            <Personal text="Education" />
-            <Personal text="Work" />
+            <Personal text="Personal" input={personalList} />
+            <Personal text="Education" input={educationList} />
+            <Personal text="Work" input={workList} />
+            <div className="button flex">
+                <Button text="Save" /><Button text="Edit" />
+            </div>
         </div>
     )
 }
