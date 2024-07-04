@@ -1,8 +1,9 @@
 import '../style/Button.css';
 
 function Button(props){
+
     return (
-        <button  className="tab">{props.text}</button>
+        <button type={props.type} className="tab">{props.text}</button>
     )
 }
 
