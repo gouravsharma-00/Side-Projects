@@ -1,0 +1,24 @@
+.personal{
+    width: 85%;
+    background-color: white;
+    height: 50px;
+    overflow: hidden;
+    transition: all .5s ease;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(167, 165, 165);
+
+}
+
+.personal:hover{
+    height:300px;
+}
+.personal h1{
+    color: white;
+    margin: 0;
+}
+.personal input{
+    height: 30px;
+    width: 80%;
+    margin: 10px;
+}
