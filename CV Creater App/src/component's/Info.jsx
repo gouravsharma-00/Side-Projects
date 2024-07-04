@@ -1,4 +1,5 @@
-import './Info.css';
+import '../style/Info.css';
+import Personal from './Personl';
 
 function InfoPanel(props){
     let background = {
@@ -7,8 +8,16 @@ function InfoPanel(props){
         backgroundColor: props.color
     }
 
+    let personalList = ['FullName', 'Email', 'Phone'];
+    let educationList = ['Course','School','Year Started','Year Ended']
+    let workList = ['Company Name', 'Position', 'Job Description', 'Year Started', 'Year Ended'];
+
     return (
-        <div className="infoPanel" style={background}></div>
+        <div className="infoPanel flex" style={background}>
+            <Personal text="Personal" />
+            <Personal text="Education" />
+            <Personal text="Work" />
+        </div>
     )
 }
 
