@@ -1,0 +1,72 @@
+.box{
+    height: 95%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.formdata{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.formdata header{
+    margin: 0;
+    background-color: rgb(68, 68, 245);
+    width: calc(100% - 20px);
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.formdata header h1{
+    margin:0;
+    flex: 1;
+}
+.formdata header .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.data{
+    position: absolute;
+    height: 76%;
+    width:48%;
+    border-radius: 5px;
+    background-color: rgb(184, 183, 183);
+    z-index:2;
+}
+.loader{
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    background: transparent;
+    animation: load .5s infinite;
+    position: absolute;
+    z-index: 3;
+}
+@keyframes load {
+    0%{
+        border-top: 5px solid blueviolet;
+    }
+    35%{
+        border-left: 5px solid blueviolet;
+    }
+    60%{
+        border-bottom: 5px solid blueviolet;
+    }
+    85%{
+        border-right: 5px solid blueviolet;
+    }
+    100%{
+        border-right: 5px solid blueviolet;
+    }
+
+
+}

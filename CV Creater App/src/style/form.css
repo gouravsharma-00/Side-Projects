@@ -1,0 +1,37 @@
+.form{
+    overflow: auto;
+    height: 47%;
+    padding: 20px;
+    width:15rem;
+    background: white;
+    border-radius:10px;
+}
+.form h1{
+    text-align: center;
+    margin: 0;
+}
+.form input{
+    width: 100%;
+    padding: 3px;
+}
+.form >.button{
+    padding: 10px 0px 10px 0px;
+    height:50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size:large;
+    font-weight:900;
+    color: rgb(73, 73, 73);
+}
+.button button:hover{
+    background-color: gray;
+    color: white;
+}
